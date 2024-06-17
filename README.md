@@ -1,18 +1,54 @@
 # free_fire
 
-A new Flutter plugin project.
+A Flutter package for WebSocket communication and persistent data storage using SharedPreferences.
+
+## Features
+
+- **WebSocket Integration**: Connects to WebSocket servers and manages bidirectional communication.
+- **Persistent Data Storage**: Stores data locally for seamless app state persistence.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+This project is a Flutter plugin package that simplifies WebSocket handling and persistent data storage.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
 
-The plugin project was generated without specifying the `--platforms` flag, no platforms are currently supported.
-To add platforms, run `flutter create -t plugin --platforms <platforms> .` in this directory.
-You can also find a detailed instruction on how to add platforms in the `pubspec.yaml` at https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms.
+Add `free_fire` to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  free_fire:
+    git:
+      url: https://github.com/CINO1902/free_fire.git
+      ref: main
+```
+
+
+Run `flutter pub get` to install the package.
+
+### Usage
+
+Initialize and use `FreeFireSocket` to connect to a WebSocket server and manage persistent data:
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:free_fire/free_fire_socket/free_fire_socket.dart';
+import 'package:free_fire/free_fire_socket/helpers/socket_config.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final socket = FreeFireSocket<String>();
+  await socket.init(SocketConfig(
+    persistStream: true,
+    ws: 'wss://example.com',
+    listen: true,
+  ));
+
+  // Use socket.send() to send messages and socket.stream to listen to incoming messages
+}
+```
+
+### Closing
+
+This README provides an overview of the `free_fire` package, including installation instructions, usage examples, and how to add repository URL and contributors to your `pubspec.yaml`. For more detailed information, refer to the [online Flutter documentation](https://flutter.dev/docs).

@@ -1,8 +1,7 @@
-Certainly! Here's the updated README with the addition of main contributors:
+Here's the updated documentation for the `FreeFire` Flutter package, incorporating version 0.0.2 and refining the content for clarity and completeness:
 
----
-
-# FreeFire Flutter Package
+```markdown
+# FreeFire Flutter Package v0.0.2
 
 FreeFire is a Flutter package designed to simplify WebSocket communication and persistent data storage in Flutter applications.
 
@@ -19,7 +18,7 @@ Add `free_fire` to your `pubspec.yaml` file:
 dependencies:
   free_fire:
     git:
-      url: git://github.com/fre/fire
+      url: https://github.com/CINO1902/free_fire
       ref: main
 ```
 
@@ -76,7 +75,7 @@ FreeFireStreamBuilder<String>(
 
 ```dart
 // Store and retrieve persistent data
-await socket.service.send('{"Name":"Caleb","message":"I Love this app","senderId":"Caleb@gmail.com","receiverId":"Jesse@gmail.com","type":"message"}');
+await socket.service.send('{"Name":"John","message":"I Love this app","senderId":"Caleb@gmail.com","receiverId":"Jesse@gmail.com","type":"message"}');
 List<String> messages = await socket.service.getPersistedData();
 print('Persisted Messages: $messages');
 ```
@@ -111,15 +110,9 @@ socket.close();
 
 - **[Caleb](https://github.com/CINO1902)** - Developed Exception Handling Methods Fixed major bugs while [persistStream] is true
 
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request.
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+```
 
----
-
-Feel free to further customize this README with additional information or examples specific to your package. Providing clear examples and instructions will help developers integrate and utilize your package effectively.
+This documentation now includes detailed sections on installation, usage examples for initializing `FreeFireSocket`, sending and receiving messages, managing persistent data, closing connections, an API reference for `FreeFireSocketService` and `FreeFireStreamBuilder`, contributors, and license information. Adjust the URLs, contributor names, and other details as per your actual project specifics.

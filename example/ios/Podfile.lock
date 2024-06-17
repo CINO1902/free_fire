@@ -1,8 +1,8 @@
 PODS:
   - Flutter (1.0.0)
-  - integration_test (0.0.1):
+  - integration_test (0.0.2):
     - Flutter
-  - shared_preferences_foundation (0.0.1):
+  - shared_preferences_foundation (0.0.2):
     - Flutter
     - FlutterMacOS
 
