@@ -108,7 +108,9 @@ socket.close();
 
 - **[Jesse Dan Amuda](https://github.com/Jesse-Dan)** - Developed FreeFireStreaBuilder and Persistance Feautures along with socket matter build.
 
-- **[Caleb](https://github.com/CINO1902)** - Developed Exception Handling Methods Fixed major bugs while [persistStream] is true
+- **[Caleb Oruta](https://github.com/CINO1902)** - Developed Exception Handling Methods Fixed major bugs while [persistStream] is true
+
+- **[Daniel Oluremi](https://github.com/daniel-py)** - Developed Exception Handling Methods Fixed major bugs while [persistStream] is true
 
 ## License
 
