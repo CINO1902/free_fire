@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:free_fire/free_fire_socket/services/socket_service.dart';
 
 /// Configuration class for WebSocket settings.
 ///

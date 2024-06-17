@@ -1,5 +1,5 @@
 name: free_fire
-version: 0.0.2
+version: 0.0.3
 description: A Flutter package for WebSocket communication and persistent data storage.
 repository: https://github.com/CINO1902/free_fire.git
 homepage: https://github.com/CINO1902/free_fire.git
